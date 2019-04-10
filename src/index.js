@@ -45,10 +45,10 @@ class AvroStitchCommand extends Command {
 
         const result = populateChildren(recordLookup[flags.root], recordLookup, new Set([]));
         if (flags.output) {
-            fs.writeFileSync(flags.output, JSON.stringify(result, null, 4));
+            fs.writeFileSync(flags.output, JSON.stringify(result, null, flags.spaces));
             
         } else {
-            console.log(JSON.stringify(result, null, 4));
+            console.log(JSON.stringify(result, null, flags.spaces));
         }
     }
 }
@@ -60,6 +60,7 @@ AvroStitchCommand.flags = {
     directory: flags.string({char: 'd', multiple: true, required: true}),
     root: flags.string({char: 'r', required: true}),
     output: flags.string({char: 'o', required: false}),
+    spaces: flags.integer({char: 's', required: false, default: 2}),
     version: flags.version({char: 'v'}),
     help: flags.help({char: 'h'})
 }

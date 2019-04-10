@@ -5,7 +5,7 @@
   "bin": {
     "avro-stitch": "./bin/run"
   },
-  "bugs": "https://github.com/brycecovert/avro-stitch/issues",
+  "bugs": "https://github.com/brycecovert/avro-stitcher/issues",
   "dependencies": {
     "@oclif/command": "^1.5.12",
     "@oclif/config": "^1.12.12",
@@ -19,7 +19,7 @@
     "/bin",
     "/src"
   ],
-  "homepage": "https://github.com/brycecovert/avro-stitch",
+  "homepage": "https://github.com/brycecovert/avro-stitcher",
   "keywords": [
     "oclif"
   ],
@@ -28,7 +28,7 @@
   "oclif": {
     "bin": "avro-stitch"
   },
-  "repository": "brycecovert/avro-stitch",
+  "repository": "brycecovert/avro-stitcher",
   "scripts": {
     "test": "echo NO TESTS"
   }

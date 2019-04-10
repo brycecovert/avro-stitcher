@@ -1,6 +1,6 @@
 {
   "name": "avro-stitch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Bryce Covert @brycecovert",
   "bin": {
     "avro-stitch": "./bin/run"
